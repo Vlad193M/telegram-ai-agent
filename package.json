@@ -1,0 +1,25 @@
+{
+  "name": "telegram-ai-agent",
+  "version": "1.0.0",
+  "description": "Telegram userbot driven by an OpenAI agent",
+  "private": true,
+  "scripts": {
+    "login": "tsx src/main.ts login",
+    "check": "tsx src/main.ts check",
+    "start": "tsx src/main.ts run",
+    "typecheck": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@mtcute/node": "^0.32.8",
+    "openai": "^7.60.0"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}

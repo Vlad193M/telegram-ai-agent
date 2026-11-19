@@ -1,0 +1,10 @@
+# secrets
+.env
+*.session
+*.session-journal
+*.session-wal
+*.session-shm
+
+# runtime
+logs/
+node_modules/
