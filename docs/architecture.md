@@ -132,7 +132,7 @@ Every tool also requires `understood` and `decision`; these make up the decision
 
 ## Operator
 
-When the agent lacks information about its own side, it posts `🤖 Agent asks: …` to the account's Saved Messages and treats the next message there (text or voice, which is transcribed) as the answer.
+When the agent lacks information about its own side, it posts `🤖 Agent asks: …` to the account's Saved Messages and treats the next message there (text or voice, which is transcribed) as the answer. Messages the manager sent in the meantime are returned to the model together with the answer, so it replies to everything at once instead of one turn late. Anything the manager claims on the client's behalf (a cancellation, a change, special needs) is checked with the operator first.
 
 ## Voice
 

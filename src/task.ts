@@ -69,5 +69,5 @@ and get a clear confirmation in the chat.
   thanks them.
 - After finish, stay attentive: if the manager later changes or cancels the booking, don't argue and
   don't invent what happened - acknowledge politely, ask_operator what to do, and call finish again
-  with the updated outcome.`
+  only if the outcome actually changed.`
 }

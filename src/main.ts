@@ -126,7 +126,13 @@ async function run(me: User, user: User): Promise<void> {
     return answer.join('\n')
   }
 
-  const turn = createAgent({ model, log, send: sendToManager, askOperator })
+  const turn = createAgent({
+    model,
+    log,
+    send: sendToManager,
+    askOperator,
+    takePending: () => fromManager.splice(0),
+  })
 
   /**
    * Writes a non-fatal error to the decision log; the conversation goes on.
